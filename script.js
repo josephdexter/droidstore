@@ -140,6 +140,57 @@ body {
 }
 .screen-app:hover { background: rgba(0,230,118,0.2); transform: scale(1.1); }
 
+const apps = [
+{
+    name: "Password Vault",
+    developer: "Shiv Josef",
+    version: "1.0",
+    rating: "4.8",
+    icon: "images/vaulticon.png",
+    apk: "apps/VaultX_v1.1.apk"
+},
+
+{
+    name: "Image Editor",
+    developer: "Shiv Josef",
+    version: "2.0",
+    rating: "4.7",
+    icon: "images/imageeditor.png",
+    apk: "apps/ImageEditor.apk"
+}
+];
+
+const appGrid = document.getElementById("appGrid");
+
+apps.forEach(app => {
+
+const card = document.createElement("div");
+
+card.className = "app-card";
+
+card.innerHTML = `
+<img class="app-icon-img" src="${app.icon}">
+
+<h4>${app.name}</h4>
+
+<p class="dev">${app.developer}</p>
+
+<div class="app-meta">
+<span>v${app.version}</span>
+<span class="rating">⭐ ${app.rating}</span>
+</div>
+
+<a href="${app.apk}" download>
+<button class="btn-download">
+Download APK
+</button>
+</a>
+`;
+
+appGrid.appendChild(card);
+
+});
+
 /* ===== Section Title ===== */
 .section-title { text-align: center; font-size: 2.2rem; font-weight: 700; margin-bottom: 40px; }
 

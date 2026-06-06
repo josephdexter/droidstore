@@ -142,6 +142,13 @@ body {
     border: 1px solid rgba(255,255,255,0.05); transition: 0.3s;
     opacity: 0; transform: translateY(30px);
 }
+.app-icon-img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
 .app-card.show { opacity: 1; transform: translateY(0); }
 .app-card:hover { transform: translateY(-8px); box-shadow: 0 15px 40px rgba(0,0,0,0.4); border-color: rgba(0,230,118,0.3); }
 .app-icon {
