@@ -191,6 +191,15 @@ appGrid.appendChild(card);
 
 });
 
+{
+    name: "Calculator Pro",
+    developer: "Shiv Josef",
+    version: "1.0",
+    rating: "4.9",
+    icon: "images/vaulticon.png",
+    apk: "apps/VaultX_v1.1.apk"
+}
+
 /* ===== Section Title ===== */
 .section-title { text-align: center; font-size: 2.2rem; font-weight: 700; margin-bottom: 40px; }
 
