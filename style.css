@@ -98,22 +98,13 @@ body {
 .gradient-text { background: linear-gradient(90deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .hero-content p { color: var(--muted); font-size: 1.15rem; max-width: 520px; margin-bottom: 32px; }
 
-.hero-btns { display: flex; gap: 16px; margin-bottom: 45px; flex-wrap: wrap; }
+.hero-btns { display: flex; gap: 16px; margin-bottom: 0; flex-wrap: wrap; }
 .btn-primary {
     background: linear-gradient(90deg, var(--primary), var(--accent));
     color: #051b12; border: none; padding: 15px 38px; border-radius: 30px;
     font-weight: 600; font-size: 1rem; cursor: pointer; transition: 0.3s;
 }
 .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,230,118,0.4); }
-.btn-secondary {
-    background: rgba(255,255,255,0.05); color: var(--text); border: 1px solid rgba(255,255,255,0.15);
-    padding: 15px 30px; border-radius: 30px; font-weight: 500; cursor: pointer; transition: 0.3s;
-}
-.btn-secondary:hover { background: rgba(255,255,255,0.12); }
-
-.hero-stats { display: flex; gap: 45px; }
-.stat h3 { font-size: 1.9rem; background: linear-gradient(90deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.stat p { color: var(--muted); font-size: 0.9rem; }
 
 /* ===== Phone Mockup ===== */
 .hero-phone { flex: 1; display: flex; justify-content: center; min-width: 280px; }
@@ -142,18 +133,6 @@ body {
 
 /* ===== Section Title ===== */
 .section-title { text-align: center; font-size: 2.2rem; font-weight: 700; margin-bottom: 40px; }
-
-/* ===== Categories ===== */
-.categories { padding: 60px 6%; }
-.category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 20px; }
-.category-card {
-    background: var(--card); padding: 28px 15px; border-radius: 18px;
-    text-align: center; cursor: pointer; transition: 0.3s;
-    border: 1px solid rgba(255,255,255,0.05);
-}
-.category-card:hover { transform: translateY(-6px); border-color: var(--primary); box-shadow: 0 10px 30px rgba(0,230,118,0.15); }
-.category-card .cat-icon { font-size: 2.4rem; margin-bottom: 10px; }
-.category-card p { font-weight: 500; }
 
 /* ===== Apps Grid ===== */
 .apps-section { padding: 60px 6%; }
@@ -212,5 +191,4 @@ body {
     .nav-links.open { right: 20px; }
     .hamburger { display: flex; }
     .hero-content h1 { font-size: 2.4rem; }
-    .hero-stats { gap: 25px; }
 }
